@@ -137,16 +137,30 @@ h1, h2, h3 {
 .product-card {
     background-color: var(--color-bg);
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
     text-decoration: none;
-    color: inherit;
+    color: var(--color-text);
     display: block;
     cursor: pointer;
 }
 
 .product-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:visited {
+    color: var(--color-text);
+}
+
+.product-card h3 {
+    color: var(--color-text);
+}
+
+/* Centrar tercer producto cuando hay 3 items */
+.products-grid .product-card:nth-child(3):last-child {
+    grid-column: 1 / -1;
+    max-width: 50%;
+    margin: 0 auto;
 }
 
 .product-image {
@@ -396,6 +410,13 @@ h1, h2, h3 {
 
     .products-grid {
         grid-template-columns: 1fr;
+    }
+
+    /* Quitar centrado en mobile */
+    .products-grid .product-card:nth-child(3):last-child {
+        grid-column: auto;
+        max-width: 100%;
+        margin: 0;
     }
 
     .transparency-grid {
