@@ -129,7 +129,7 @@ h1, h2, h3 {
 
 .products-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-md);
     margin-top: var(--spacing-md);
 }
@@ -188,11 +188,19 @@ h1, h2, h3 {
     background-color: var(--color-bg);
 }
 
+.transparency-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-md);
+    font-style: italic;
+}
+
 .transparency-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--spacing-md);
-    margin-bottom: var(--spacing-md);
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
 }
 
 .transparency-item {
@@ -201,9 +209,15 @@ h1, h2, h3 {
     text-align: center;
 }
 
+.transparency-icon {
+    font-size: 2rem;
+    color: var(--color-accent);
+    margin-bottom: 0.5rem;
+}
+
 .transparency-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: var(--spacing-xs);
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-weight: 400;
@@ -211,28 +225,108 @@ h1, h2, h3 {
 
 .transparency-item p {
     color: var(--color-text-light);
-    line-height: 1.8;
+    line-height: 1.7;
+    font-size: 0.95rem;
 }
 
-.resoma-program {
+/* Production Stats */
+.production-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-sm);
     background-color: var(--color-white);
     padding: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
     text-align: center;
-    border-radius: 8px;
-    margin-top: var(--spacing-md);
 }
 
-.resoma-program h3 {
-    font-size: 1.8rem;
+.stat h4 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    color: var(--color-accent);
+}
+
+.stat p {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ReSOMA Section */
+.resoma-section {
+    background-color: var(--color-white);
+    padding: var(--spacing-md);
+}
+
+.resoma-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-md);
+}
+
+.resoma-text h3 {
+    font-size: 2rem;
     margin-bottom: var(--spacing-xs);
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-weight: 400;
 }
 
-.resoma-program p {
-    font-size: 1.1rem;
+.resoma-description {
+    font-size: 1.05rem;
     color: var(--color-text-light);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-sm);
+}
+
+.resoma-features {
+    list-style: none;
+    padding: 0;
+}
+
+.resoma-features li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+.resoma-features li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-weight: bold;
+}
+
+.resoma-values {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    justify-content: center;
+}
+
+.value-item {
+    text-align: center;
+    padding: var(--spacing-xs);
+}
+
+.value-number {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.value-item p {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    line-height: 1.3;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 /* ===== FOOTER ===== */
@@ -302,6 +396,24 @@ h1, h2, h3 {
     .transparency-grid {
         grid-template-columns: 1fr;
         gap: var(--spacing-sm);
+    }
+
+    .production-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-xs);
+    }
+
+    .stat h4 {
+        font-size: 2rem;
+    }
+
+    .resoma-content {
+        grid-template-columns: 1fr;
+    }
+
+    .resoma-values {
+        flex-direction: row;
+        justify-content: space-around;
     }
 
     .footer-content {
