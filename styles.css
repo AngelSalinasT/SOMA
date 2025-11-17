@@ -395,12 +395,21 @@ h1, h2, h3 {
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+
     .tagline {
         font-size: 2rem;
     }
 
     .section-title {
         font-size: 1.8rem;
+    }
+
+    .transparency-subtitle {
+        font-size: 1rem;
+        padding: 0 1rem;
     }
 
     .manifesto-grid {
@@ -424,9 +433,22 @@ h1, h2, h3 {
         gap: var(--spacing-sm);
     }
 
+    .transparency-item {
+        padding: var(--spacing-sm) var(--spacing-xs);
+    }
+
+    .transparency-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .transparency-item p {
+        font-size: 0.9rem;
+    }
+
     .production-stats {
         grid-template-columns: repeat(2, 1fr);
         gap: var(--spacing-xs);
+        padding: var(--spacing-sm);
     }
 
     .stat h4 {
@@ -435,11 +457,39 @@ h1, h2, h3 {
 
     .resoma-content {
         grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+
+    .resoma-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .resoma-description {
+        font-size: 1rem;
+    }
+
+    .resoma-features li {
+        font-size: 0.95rem;
+        padding: 0.4rem 0;
+        padding-left: 1.2rem;
     }
 
     .resoma-values {
         flex-direction: row;
         justify-content: space-around;
+        margin-top: var(--spacing-sm);
+    }
+
+    .value-item {
+        padding: var(--spacing-xs) 0.5rem;
+    }
+
+    .value-number {
+        font-size: 2rem;
+    }
+
+    .value-item p {
+        font-size: 0.75rem;
     }
 
     .footer-content {
@@ -449,6 +499,16 @@ h1, h2, h3 {
 
     section {
         padding: var(--spacing-md) 0;
+    }
+
+    .resoma-section {
+        padding: var(--spacing-sm);
+    }
+
+    .care-list li {
+        font-size: 0.9rem;
+        padding: 0.5rem 0;
+        padding-left: 1.5rem;
     }
 }
 
