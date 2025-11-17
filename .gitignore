@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build outputs
+*.log
+dist/
+build/
+
+# OS files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Assets (muy pesados para GitHub)
+assets/
+*.png
+!landing/images/*.png
+!landing/QR-*.png
+
+# Temporary files
+*.tmp
+.cache/
+
+# Environment
+.env
+.env.local
+
+# Claude artifacts
+.claude/
