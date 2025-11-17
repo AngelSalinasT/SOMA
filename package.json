@@ -1,0 +1,27 @@
+{
+  "name": "soma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build",
+    "export": "slidev export"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@slidev/cli": "^52.8.0",
+    "@slidev/theme-default": "^0.25.0",
+    "@types/node": "^24.10.1",
+    "playwright-chromium": "^1.56.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@types/pdfkit": "^0.17.3",
+    "pdfkit": "^0.17.2"
+  }
+}
